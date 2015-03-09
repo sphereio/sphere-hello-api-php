@@ -9,6 +9,6 @@ script:
   - php -f index.php | grep -q "MB PREMIUM TECH T"
 env:
   global:
-    - secure: E+DFfDvdES4UCZm2KXlFxidq8QqYxwfgn6E1EO1HRILILpTs05eGMliUgSLSAOTe8rHPD6/eUYTwEKiBupHPPB5byzcmY6zRhd1+N42SbH/yOiJx5aWQlPNc4mCD2Qi772alvSdCvgmm6678MBfL2PEQ+61fML6e2Z7n6sezUxs=
-    - secure: lBHT8X5FdT3iVSzBqRD4UspVe0CUe27IBvgk1C8h8bx9iWaI0FCpaMCRAPaYEFrMTbEiZ0FprLqiOi6IWfNGouBdWacXJe6Lx7NbT9xY3dZLx5pIIzlEz3XwBQy08kOEZATmuCIGjKbjM0qJRYAbOONzsBR5gM6aHi34jNFE4v4=
-    - secure: OFH0VyZunrbkg4cjz93qpA5jjAT0VdpawMBkkcYCikOdT/X9QUcWqYjGM5IuvggkVENGvSpnFwKTvhCjd8fs7qvdgEzKbL046bAJucPRc/UKUfksvXiC8neOEtzdGioMaDV+GCCJZYIRq7g3onbGVbU59I4/7vTv8V7TX4QvTmg=
+    - secure: SN8EIQiUvhp5tANd3i/HCwjwla3MYHtplt/+dnQ/N8oOlt/1NRn5Cc5nHbBgf6cBXFJe4sq70fsjzMy4smRKXQmPd+nb5wBfWbX2Hqs90qKF7sCWNy/UGtqwGCl7+64mG9YYi1Iky3eteNIfYmUf+NYehCf9iJt3KGGPT6J/Jp0=
+    - secure: eQBhcawm0NfGIW9cOBfEsrDtEt0G+Lb6gdVzIbf0g7WyVeiPw1SBkDt2c2HJ3XgWfs04tL35n/prhyrlaswrsWMvSDaQ1Tx4kdSeyWJb5yEPTIwQvqU78lgi5pS4DN6y0xLoBUPmwtOLfS+jdJVS45uPhDkEF9RH7KT6ZRCugm4=
+    - secure: q31tDjWyEywxdGQIZprOkrBSPkvuhGvHwUgG60BzePhYsuIGxcP1lL1Y+65cUWh2CfrFw1t43VAY0TFe6Bz1VyquG45Wt3Iey+Rw3vJt59KQ/5t1WRXYlXKixF4oiy2AxyN4v0nOlCfHOCSXBgJlqIxnTbQafavkatArikkRIfk=
