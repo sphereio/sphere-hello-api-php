@@ -1,0 +1,14 @@
+language: php
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+before_script:
+  - ./create_config.sh
+script:
+  - php -f index.php | grep -q "MB PREMIUM TECH T"
+env:
+  global:
+    - secure: E+DFfDvdES4UCZm2KXlFxidq8QqYxwfgn6E1EO1HRILILpTs05eGMliUgSLSAOTe8rHPD6/eUYTwEKiBupHPPB5byzcmY6zRhd1+N42SbH/yOiJx5aWQlPNc4mCD2Qi772alvSdCvgmm6678MBfL2PEQ+61fML6e2Z7n6sezUxs=
+    - secure: lBHT8X5FdT3iVSzBqRD4UspVe0CUe27IBvgk1C8h8bx9iWaI0FCpaMCRAPaYEFrMTbEiZ0FprLqiOi6IWfNGouBdWacXJe6Lx7NbT9xY3dZLx5pIIzlEz3XwBQy08kOEZATmuCIGjKbjM0qJRYAbOONzsBR5gM6aHi34jNFE4v4=
+    - secure: OFH0VyZunrbkg4cjz93qpA5jjAT0VdpawMBkkcYCikOdT/X9QUcWqYjGM5IuvggkVENGvSpnFwKTvhCjd8fs7qvdgEzKbL046bAJucPRc/UKUfksvXiC8neOEtzdGioMaDV+GCCJZYIRq7g3onbGVbU59I4/7vTv8V7TX4QvTmg=
