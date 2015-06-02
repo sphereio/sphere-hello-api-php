@@ -1,20 +1,20 @@
 <?php
-  include('./config.php');
-  include('./app.php');
+include(__DIR__ . '/config.php');
+include(__DIR__ . '/app.php');
 
-  $encoded_products = json_encode($result); // to json string
-  $products = json_decode($encoded_products); // to object
+$encoded_products = json_encode($result); // to json string
+$products = json_decode($encoded_products); // to object
 
-  function imgUrl($url, $size){
+function imgUrl($url, $size){
     $parts = explode(".", $url);
     $idx = count($parts) - 2;
     $name = $parts[$idx]."-".$size;
     $parts[$idx] = $name;
     return implode(".", $parts);
-  }
-  foreach($products->results as $product) {
-?>
-<div style="height: 190px;
+}
+foreach($products->results as $product) {
+    ?>
+    <div style="height: 190px;
   width: 155px;
   margin: 10px 25px 0 0;
   float: left;
@@ -23,8 +23,8 @@
   font-family: 'Open Sans',sans-serif;
   font-weight: 400;
   ">
-  <a href="#" style="color: #00b5de;">
-    <img src="<?= count($product->masterVariant->images) > 0 ? imgUrl($product->masterVariant->images[0]->url, "small") : "http://placehold.it/165.png" ?>" style="width: 140px;
+        <a href="#" style="color: #00b5de;">
+            <img src="<?= count($product->masterVariant->images) > 0 ? imgUrl($product->masterVariant->images[0]->url, "small") : "http://placehold.it/165.png" ?>" style="width: 140px;
       height: 140px;
       display: block;
       padding: 4px;
@@ -41,11 +41,11 @@
       overflow: hidden;
       display: block;
       "><?= $product->name->en ?></span>
-  </a>
+        </a>
   <span style="text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     display: block;
     "><?= count($product->variants) ?> Variants</span>
-</div>
+    </div>
 <?php } ?>

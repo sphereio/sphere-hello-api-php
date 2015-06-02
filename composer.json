@@ -1,0 +1,15 @@
+{
+  "name": "sphere/hello",
+  "description": "Sphere Hello example",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jens Schulze",
+      "email": "jens.schulze@commercetools.de"
+    }
+  ],
+  "require": {
+    "sphere/php-sdk": "dev-master"
+  }
+}
