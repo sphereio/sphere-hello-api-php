@@ -10,6 +10,8 @@
     }
   ],
   "require": {
-    "sphere/php-sdk": "^1.0@beta"
+    "sphere/php-sdk": "^1.0@beta",
+    "guzzlehttp/guzzle": "^5.0",
+    "guzzlehttp/log-subscriber": "^1.0"
   }
 }
