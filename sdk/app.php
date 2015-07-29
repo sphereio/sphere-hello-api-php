@@ -9,9 +9,8 @@ use Sphere\Core\Request\Products\ProductProjectionQueryRequest;
 $appConfig = include(__DIR__ . '/config.php');
 
 $context = Context::of()->setLanguages(['en'])->setGraceful(true);
-$config = new Config();
-$config->fromArray($appConfig)->setContext($context);
-$client = new Client($config);
+$config = Config::fromArray($appConfig)->setContext($context);
+$client = Client::ofConfig($config);
 
 $products = $client->execute(ProductProjectionQueryRequest::of())->toObject();
 ?>

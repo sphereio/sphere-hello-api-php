@@ -10,6 +10,6 @@
     }
   ],
   "require": {
-    "sphere/php-sdk": "dev-master"
+    "sphere/php-sdk": "^1.0@beta"
   }
 }
