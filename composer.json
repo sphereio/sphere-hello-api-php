@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "sphere/php-sdk": "^1.0@beta",
+    "commercetools/php-sdk": "^1.0",
     "guzzlehttp/guzzle": "^6.0"
   }
 }

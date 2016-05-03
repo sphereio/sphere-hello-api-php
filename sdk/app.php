@@ -1,11 +1,11 @@
 <?php
 namespace Sphere\Hello;
 
-use Sphere\Core\Cache\NullCacheAdapter;
-use Sphere\Core\Client;
-use Sphere\Core\Config;
-use Sphere\Core\Model\Common\Context;
-use Sphere\Core\Request\Products\ProductProjectionQueryRequest;
+use Commercetools\Core\Cache\NullCacheAdapter;
+use Commercetools\Core\Client;
+use Commercetools\Core\Config;
+use Commercetools\Core\Model\Common\Context;
+use Commercetools\Core\Request\Products\ProductProjectionQueryRequest;
 
 $appConfig = include(__DIR__ . '/config.php');
 

@@ -5,7 +5,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 include(__DIR__ . '/app.php');
 
 /**
- * @var \Sphere\Core\Model\Product\ProductProjection $product
+ * @var \Commercetools\Core\Model\Product\ProductProjection $product
  */
   foreach($products as $product) {
 ?>
