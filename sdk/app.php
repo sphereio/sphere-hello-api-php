@@ -1,18 +1,21 @@
 <?php
-namespace Sphere\Hello;
+namespace Commercetools\Hello;
 
 use Commercetools\Core\Cache\NullCacheAdapter;
 use Commercetools\Core\Client;
 use Commercetools\Core\Config;
 use Commercetools\Core\Model\Common\Context;
-use Commercetools\Core\Request\Products\ProductProjectionQueryRequest;
+use Monolog\Handler\StreamHandler;
+use Monolog\Logger;
 
 $appConfig = include(__DIR__ . '/config.php');
 
+$logger = new Logger('hello', [new StreamHandler('resource.log')]);
+
 $cache = new NullCacheAdapter();
+
 $context = Context::of()->setLanguages(['en'])->setGraceful(true);
 $config = Config::fromArray($appConfig)->setContext($context);
-$client = Client::ofConfigAndCache($config, $cache);
+$client = Client::ofConfigCacheAndLogger($config, $cache, $logger);
 
-$products = $client->execute(ProductProjectionQueryRequest::of())->toObject();
 ?>
